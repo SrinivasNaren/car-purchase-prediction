@@ -1,60 +1,102 @@
-📌 Objective:
-To predict how much a customer is likely to spend on a car, using machine learning, based on their age, salary, credit card debt, and net worth.
+# 🚗 Car Purchase Prediction using Linear Regression
 
-📂 Dataset Info:
-The dataset includes:
+This project predicts the amount a customer is likely to spend on purchasing a car based on their personal and financial details. It uses **Linear Regression** to analyze the relationship between various features and the car purchase amount.
 
-Customer name, email (removed later)
+---
 
-Country, gender, age
+## 📊 Dataset Overview
 
-Annual salary 💰
+The dataset includes the following columns:
 
-Credit card debt 💳
+- `customer name`
+- `customer e-mail`
+- `country`
+- `gender`
+- `age`
+- `annual Salary`
+- `credit card debt`
+- `net worth`
+- `car purchase amount` (Target)
 
-Net worth 💼
+---
 
-Car purchase amount 🚗 (this is what we try to predict)
+## 🔧 Technologies Used
 
-🧹 Data Preprocessing:
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn (sklearn)
 
-Removed unnecessary columns like customer name and email (they are not useful for prediction).
+---
 
-Removed any missing or empty values from the data.
+## 📁 Project Structure
 
-Converted text columns (like gender, country) into numbers using One-Hot Encoding so the machine learning model can understand them.
+```
+car-purchase-prediction/
+│
+├── car_purchasing.csv          # Dataset file
+├── main.py                     # Main code for training & prediction
+└── README.md                   # This file
+```
 
-🤖 Model Used:
+---
 
-Chose Linear Regression, a simple and commonly used machine learning algorithm.
+## 🧠 Steps Performed
 
-It learns the relationship between a person’s financial data and the car price they paid.
+1. **Load the dataset** using Pandas
+2. **Clean the data** by removing unnecessary columns and handling missing values
+3. **Encode categorical variables** (e.g., country, gender)
+4. **Split the dataset** into training and test sets
+5. **Train the Linear Regression model**
+6. **Evaluate the model** using R² score and Mean Squared Error
+7. **Plot Actual vs Predicted values** using Matplotlib
 
-🧪 Training and Testing:
+---
 
-Split the data into training (80%) and testing (20%) parts.
+## 🚀 How to Run the Project
 
-Trained the model using the training data.
+### ✅ Prerequisites
 
-Tested the model on new data it hasn’t seen before.
+- Python 3.x installed
+- Libraries: `pandas`, `matplotlib`, `scikit-learn`
 
-📈 Model Evaluation:
+You can install required libraries using:
 
-Measured how good the model is using:
+```bash
+pip install pandas matplotlib scikit-learn
+```
 
-R² Score: tells how accurate our predictions are.
+### ▶️ Run the Code
 
-MSE (Mean Squared Error): shows how far off our predictions are from real values.
+```bash
+python main.py
+```
 
-📊 Visualization:
+It will show:
 
-Plotted a graph between Actual Car Prices and Predicted Car Prices to see how close they are.
+- Accuracy (R2 score)
+- Error (Mean Squared Error)
+- A scatter plot of actual vs predicted values
 
-Helps us visually understand model performance.
+---
 
-✅ Conclusion:
+## 📷 Sample Output
 
-Successfully created a machine learning model that can predict how much a customer might spend on buying a car.
+You’ll get a plot like this:
 
-This kind of model can be used in car dealerships, banks, or marketing to understand customers better.
+![Output Graph](output.png)
 
+---
+
+## 🙌 Contribution
+
+Feel free to fork the repo and open a Pull Request for any improvements or suggestions.
+
+---
+
+## 📬 Contact
+
+Created by [V Srinivas Naren](https://github.com/SrinivasNaren)
+
+---
